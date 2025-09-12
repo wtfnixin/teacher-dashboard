@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern Teacher Dashboard for managing students, performance, timetables, and resources" />
+    <meta name="keywords" content="teacher dashboard, education, student management, performance tracking" />
+    <meta name="author" content="EduBoard" />
+    <title>EduBoard - Teacher Dashboard</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eduboard.example.com/" />
+    <meta property="og:title" content="EduBoard - Teacher Dashboard" />
+    <meta property="og:description" content="Modern Teacher Dashboard for managing students, performance, timetables, and resources" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://eduboard.example.com/" />
+    <meta property="twitter:title" content="EduBoard - Teacher Dashboard" />
+    <meta property="twitter:description" content="Modern Teacher Dashboard for managing students, performance, timetables, and resources" />
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.pexels.com" />
+    
+    <!-- Critical CSS for faster loading -->
+    <style>
+      /* Critical CSS for initial load */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .animate-in {
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+      }
+      
+      .slide-in-from-left {
+        animation-name: slideInFromLeft;
+      }
+      
+      .slide-in-from-right {
+        animation-name: slideInFromRight;
+      }
+      
+      .slide-in-from-top-2 {
+        animation-name: slideInFromTop;
+      }
+      
+      .slide-in-from-bottom {
+        animation-name: slideInFromBottom;
+      }
+      
+      @keyframes slideInFromLeft {
+        from {
+          transform: translateX(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slideInFromRight {
+        from {
+          transform: translateX(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slideInFromTop {
+        from {
+          transform: translateY(-10px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slideInFromBottom {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
