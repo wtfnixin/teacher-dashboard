@@ -10,6 +10,7 @@ import {
   X
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Logo from '../WhatsApp Image 2025-09-09 at 10.28.37 PM.jpeg';
 
 interface SidebarProps {
   activeTab: string;
@@ -32,10 +33,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
     <div className="flex flex-col h-full">
       <div className="p-6">
         <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-            <LayoutDashboard className="h-4 w-4 text-white" />
-          </div>
-          <span className="text-xl font-bold text-gray-900">EduBoard</span>
+          <img src={Logo} alt="Logo" className="h-8 w-8 rounded-full object-contain" />
+          <span className="text-xl font-bold text-gray-900">Gyanika</span>
         </div>
       </div>
 

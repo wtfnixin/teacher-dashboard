@@ -9,9 +9,9 @@ const languages: Language[] = [
 
 const translations: Translations = {
   dashboard: {
-    en: 'Teacher Dashboard',
-    hi: 'शिक्षक डैशबोर्ड',
-    pa: 'ਅਧਿਆਪਕ ਡੈਸ਼ਬੋਰਡ'
+    en: 'Dashboard',
+    hi: 'डैशबोर्ड',
+    pa: 'ਡੈਸ਼ਬੋਰਡ'
   },
   students: {
     en: 'Students',
